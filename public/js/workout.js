@@ -224,7 +224,7 @@ $(document).ready(function () {
     console.log("Excercise Data: ", excerciseData);
     const { name, type, weight, sets, reps, duration, distance, id } = excerciseData;
 
-    addExcercise(name, type, weight, sets, reps, duration, distance, id);
+    await addExcercise(name, type, weight, sets, reps, duration, distance, id);
 
     $workoutInput.val("");
 

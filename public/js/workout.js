@@ -170,6 +170,7 @@ $(document).ready(function () {
 
       cardContainer.append(bodyContainer);
     });
+    return;
   }
 
   $workoutForm.on("submit", async function (event) {
@@ -181,7 +182,7 @@ $(document).ready(function () {
     console.log("Workout Data: ", workoutData);
     const { name } = workoutData;
 
-    addWorkout(name);
+    await addWorkout(name);
 
     $workoutInput.val("");
 
